@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#111412" />
+    <meta
+      name="description"
+      content="HotelLux — experiência fictícia de hotelaria premium, projeto de portfólio."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HotelLux — Contato</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html"
+          >HOTEL<span>LUX</span><small>ESTADIAS EXTRAORDINÁRIAS</small></a
+        ><button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Abrir menu"
+        >
+          ☰
+        </button>
+        <nav id="main-nav" class="nav">
+          <a href="index.html" class="">Início</a
+          ><a href="acomodacoes.html" class="">Acomodações</a
+          ><a href="experiencias.html" class="">Experiências</a
+          ><a href="reservas.html" class="">Reservas</a
+          ><a href="contato.html" class="active">Contato</a
+          ><a class="nav-cta" href="reservas.html">Reservar estadia ↗</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-intro wrap">
+        <div class="eyebrow">FALE CONOSCO</div>
+        <h1>Estamos aqui para inspirar.</h1>
+        <p>Envie uma mensagem demonstrativa e veja a confirmação local.</p>
+      </section>
+      <section class="section wrap contact-layout">
+        <div>
+          <div class="eyebrow">INFORMAÇÕES</div>
+          <h2>Uma conversa pode começar uma grande viagem.</h2>
+          <p>
+            HotelLux é uma marca fictícia criada para demonstrar um site
+            institucional de hotelaria.
+          </p>
+          <div class="info-box">
+            <strong>Atendimento demonstrativo</strong>
+            <p>Segunda a sexta, das 9h às 18h</p>
+            <p>Não existe estabelecimento físico ou atendimento real.</p>
+          </div>
+          <img
+            class="contact-img"
+            src="assets/images/photo-1551882547-ff40c63fe5fa.jpg"
+            alt="Lobby de hotel ilustrativo"
+            loading="lazy"
+          />
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <label
+            >Seu nome<input
+              name="name"
+              autocomplete="name"
+              placeholder="Como podemos chamar você?"
+              required
+              minlength="2" /></label
+          ><label
+            >E-mail<input
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="voce@exemplo.com"
+              required /></label
+          ><label
+            >Assunto<select name="subject" required>
+              <option value="">Selecione</option>
+              <option>Informações gerais</option>
+              <option>Acomodações</option>
+              <option>Experiências</option>
+              <option>Outro assunto</option>
+            </select></label
+          ><label
+            >Mensagem<textarea
+              name="message"
+              rows="6"
+              minlength="10"
+              placeholder="Conte um pouco da sua ideia..."
+              required
+            ></textarea></label
+          ><button class="btn gold" type="submit">
+            Enviar mensagem de teste ↗
+          </button>
+          <p class="disclaimer">Nenhuma mensagem é enviada ou armazenada.</p>
+          <div
+            id="contact-result"
+            class="result"
+            aria-live="polite"
+            hidden
+          ></div>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand" href="index.html">HOTEL<span>LUX</span></a>
+          <p>Hospitalidade, conforto e experiências memoráveis.</p>
+          <p class="muted">Hotel e informações inteiramente fictícios.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="acomodacoes.html">Acomodações</a
+          ><a href="experiencias.html">Experiências</a
+          ><a href="reservas.html">Reservas</a>
+        </div>
+        <div>
+          <h3>Informações</h3>
+          <a href="contato.html">Contato</a>
+          <p>Atendimento demonstrativo</p>
+          <p>Sem reservas ou cobranças reais</p>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© 2026 HotelLux. Projeto fictício para portfólio.</span
+        ><a
+          href="https://github.com/JefersonAlvesrs"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Desenvolvido por Jeferson Alves ↗</a
+        >
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

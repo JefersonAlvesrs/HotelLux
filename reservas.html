@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#111412" />
+    <meta
+      name="description"
+      content="HotelLux — experiência fictícia de hotelaria premium, projeto de portfólio."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HotelLux — Reservas</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html"
+          >HOTEL<span>LUX</span><small>ESTADIAS EXTRAORDINÁRIAS</small></a
+        ><button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Abrir menu"
+        >
+          ☰
+        </button>
+        <nav id="main-nav" class="nav">
+          <a href="index.html" class="">Início</a
+          ><a href="acomodacoes.html" class="">Acomodações</a
+          ><a href="experiencias.html" class="">Experiências</a
+          ><a href="reservas.html" class="active">Reservas</a
+          ><a href="contato.html" class="">Contato</a
+          ><a class="nav-cta" href="reservas.html">Reservar estadia ↗</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-intro wrap">
+        <div class="eyebrow">PLANEJE SUA ESTADIA</div>
+        <h1>Seu próximo destino começa aqui.</h1>
+        <p>
+          Escolha as datas, os hóspedes e a suíte para simular uma estadia.
+          Nenhuma reserva real será realizada.
+        </p>
+      </section>
+      <section class="section warm">
+        <div class="wrap booking-layout">
+          <div class="booking-panel">
+            <div class="eyebrow">SIMULAÇÃO DE RESERVA</div>
+            <h2>Encontre sua experiência.</h2>
+            <form id="booking-form" novalidate>
+              <div class="form-grid">
+                <label
+                  >Check-in<input id="checkin" type="date" required /></label
+                ><label
+                  >Check-out<input id="checkout" type="date" required /></label
+                ><label
+                  >Hóspedes<select id="guests" required>
+                    <option value="1">1 hóspede</option>
+                    <option value="2" selected>2 hóspedes</option>
+                    <option value="3">3 hóspedes</option>
+                    <option value="4">4 hóspedes</option>
+                  </select></label
+                ><label
+                  >Suíte<select id="room" required>
+                    <option value="classic">
+                      Suíte Classic — R$ 890/noite
+                    </option>
+                    <option value="premium">
+                      Suíte Premium — R$ 1.290/noite
+                    </option>
+                    <option value="signature">
+                      Suíte Signature — R$ 1.890/noite
+                    </option>
+                  </select></label
+                >
+              </div>
+              <button class="btn gold full" type="submit">
+                Consultar estadia ↗
+              </button>
+              <p class="disclaimer">
+                Simulação local. Não consultamos disponibilidade real nem
+                coletamos dados pessoais.
+              </p>
+              <div
+                id="booking-result"
+                class="result"
+                aria-live="polite"
+                hidden
+              ></div>
+            </form>
+          </div>
+          <aside class="booking-aside">
+            <img
+              src="assets/images/photo-1611892440504-42a792e24d32.jpg"
+              alt="Suíte de hotel ilustrativa"
+            />
+            <div>
+              <div class="eyebrow">COMO FUNCIONA</div>
+              <h3>Planejamento sem compromisso.</h3>
+              <p>
+                O sistema calcula uma estimativa fictícia com base nas datas e
+                na suíte escolhida.
+              </p>
+              <p>Não há pagamentos, bloqueios de datas ou reservas reais.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand" href="index.html">HOTEL<span>LUX</span></a>
+          <p>Hospitalidade, conforto e experiências memoráveis.</p>
+          <p class="muted">Hotel e informações inteiramente fictícios.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="acomodacoes.html">Acomodações</a
+          ><a href="experiencias.html">Experiências</a
+          ><a href="reservas.html">Reservas</a>
+        </div>
+        <div>
+          <h3>Informações</h3>
+          <a href="contato.html">Contato</a>
+          <p>Atendimento demonstrativo</p>
+          <p>Sem reservas ou cobranças reais</p>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© 2026 HotelLux. Projeto fictício para portfólio.</span
+        ><a
+          href="https://github.com/JefersonAlvesrs"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Desenvolvido por Jeferson Alves ↗</a
+        >
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
